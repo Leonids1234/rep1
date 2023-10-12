@@ -4,6 +4,7 @@
     /*font-family: "Roboto";*/
     --text-color: grey;
     /*--primary-color: red;*/
+    background-color: rgb(255, 255, 255);
 }
 
 .head_frame{/*в ней кружочки и текст*/
@@ -117,8 +118,8 @@
 
 .button_list{
     display: flex;
-    width: 144px;
-    height: 50px;
+    width: 55px;
+    height: 10px;
     padding: 20px 50px;
     justify-content: center;
     align-items: center;
@@ -131,12 +132,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 /*список услуг*/
 
 .section2{
     background: #EBEBEB;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .hide{
@@ -148,6 +152,8 @@
     height: 116px;
     flex-shrink: 0;
     display: flex;
+    border-top: 1px solid #85859B;
+    margin: 10px 80px 10px 10px;
 }
 
 .small_pic{
@@ -224,6 +230,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 0px;
 }
 
 .text7{
@@ -232,6 +239,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 0px;
 }
 
 .text8{
@@ -240,6 +248,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
+    margin-bottom: 0px;
 }
 
 .block2{
@@ -256,17 +265,12 @@
     line-height: normal;
 }
 
-.photo6{
-    width: 20px;
-    height: 0px;
-    stroke-width: 2px;
-    stroke: #7875FE;
-}
-
 /*далее спонсоры на сером фоне*/
 
 .section4{
     background: #EBEBEB;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .block3{
@@ -274,35 +278,19 @@
 }
 
 .block4{
-    display: flex;
-    width: 150px;
-    height: 80px;
-    padding: 20.148px 17.059px 27.259px 17.059px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    border: 1px solid #C4C4C4;
+    margin-right: 30px;
+    padding: 20px 20px;
 }
 
 .inblock1{
     width: 115.882px;
     height: 32.593px;
     flex-shrink: 0;
-}
-
-.block5{
-    display: flex;
-    width: 150px;
-    height: 80px;
-    padding: 24.296px 20px 24.296px 20.588px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.inblock2{
-    width: 109.412px;
-    height: 31.407px;
-    flex-shrink: 0;
+    
 }
 
 /*конец серого фона*/
@@ -317,9 +305,13 @@
 }
 
 .photo7{
-    width: 290px;
-    height: 220.433px;
+    width: 295px;
+    height: 240px;
     flex-shrink: 0;
+}
+
+.posision{
+    position: relative;
 }
 
 .text10{
@@ -346,10 +338,11 @@
 }
 
 .block6{
+    background: #4C5866;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     flex-shrink: 0;
 }
 
@@ -382,24 +375,20 @@
     flex-shrink: 0;
     opacity: 0.2;
     background: #DDD;
-}
-
-.links{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 .photo10{
     width: 24px;
     height: 24px;
-    
+    margin-right: 30px;
 }
 
 .lastbox{
     width: 320px;
     text-align: center;
     flex-shrink: 0;
+    background: white;
 }
 
 .lasttext{
@@ -422,8 +411,14 @@
     flex-shrink: 0;
 }
 
-.line4{
-    width: 290px;
-    height: 1px;
-    flex-shrink: 0;
+.block0{
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.block11{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-bottom: 1em;
 }
