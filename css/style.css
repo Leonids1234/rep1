@@ -1,10 +1,20 @@
 :root {
-    font-family: 'Ubuntu', sans-serif;
     font-family: 'Roboto', sans-serif;
-    /*font-family: "Roboto";*/
     --text-color: grey;
-    /*--primary-color: red;*/
     background-color: rgb(255, 255, 255);
+    --t1_color: #333;
+    --t2_color: #4C5866;
+    --t3_color: #FFF;
+    --t4_color: #85859B;
+    --t5_color: #666;
+    --t6_color: #7875FE;
+    --t7_color: #EBEBEB;
+    --t8_color: #B5B5BD;
+    --t9_color: #DDD;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 .head_frame{/*в ней кружочки и текст*/
@@ -16,9 +26,9 @@
 }
 
 .text1{
-    color: #333;
-    font-family: Ubuntu;
-    font-size: 20px;
+    color: var(--t1_color);
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -29,45 +39,25 @@
     margin-top: 0px;
     margin-bottom: 0px;
     width: 221px;
-    color: #4C5866;
-    font-family: Roboto;
-    font-size: 30px;
+    color: var(--t2_color);
+    font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 30px */
 }
 
-.photo2{
-    width: 32px;
-    height: 17px;
-    border-radius: 11px;
-    border: 1px solid #333;
-}
-
-.photo3{
-    width: 17px;
-    height: 17px;
-    border-radius: 11px;
-    border: 1px solid #333;
-}
-
 .line1 {
-    /*width: 200px;*/
-    border-top: 1px solid #85859B;
+    border-top: 1px solid var(--t4_color);
 }
 
 .line2 {
-    /*width: 200px;*/
-    border-top: 1px solid #85859B;
+    border-top: 1px solid var(--t4_color);
     margin-top: 18px;
 }
 
 .buttons1{
     display: flex;
-    /*width: 320px;*/
-    /*justify-content: center;*/
     align-items: center;
-    /*gap: 182px;*/
     margin-top: 18px;
 }
 
@@ -102,18 +92,16 @@
 }
 
 .text1{
-    color: #4C5866;
-    font-family: Roboto;
-    font-size: 30px;
+    color: var(--t2_color);
+    font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 30px */
 }
 
 .text2{
-    color: #85859B;
-    font-family: Roboto;
-    font-size: 14px;
+    color: var(--t4_color);
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 21px */
@@ -128,10 +116,10 @@
     align-items: center;
     gap: 6px;
     flex-shrink: 0;
-    border: 1px solid #7875FE;
-    background-color: white;
-    color: #7875FE;
-    font-size: 18px;
+    border: 1px solid var(--t6_color);
+    background-color: var(--t3_color);
+    color: var(--t6_color);
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -141,7 +129,7 @@
 /*список услуг*/
 
 .section2{
-    background: #EBEBEB;
+    background: var(--t7_color);
     width: 320px;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -162,7 +150,7 @@
     height: 116px;
     flex-shrink: 0;
     display: flex;
-    border-top: 1px solid #85859B;
+    border-top: 1px solid var(--t4_color);
     width: calc(100% - 15px);
     padding-bottom: 20px;
 }
@@ -176,8 +164,8 @@
 }
 
 .text_m{
-    color: #666;
-    font-size: 16px;
+    color: var(--t5_color);
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */ 
@@ -186,8 +174,8 @@
 }
 
 .text_sm{
-    color: #85859B;
-    font-size: 16px;
+    color: var(--t4_color);
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -207,8 +195,8 @@
 }
 
 .text4{
-    color: #666;
-    font-size: 24px;
+    color: var(--t5_color);
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 24px */
@@ -216,9 +204,8 @@
 }
 
 .text5{
-    color: #85859B;
-    font-family: Roboto;
-    font-size: 16px;
+    color: var(--t4_color);
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
@@ -253,12 +240,12 @@
 .photo5{
     width: calc(100% - 15px);;
     flex-shrink: 0;
-    background: #EBEBEB;
+    background: var(--t7_color);
 }
 
 .text6{
-    color: #666;
-    font-size: 24px;
+    color: var(--t5_color);
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -267,8 +254,8 @@
 }
 
 .text7{
-    color: #B5B5BD;
-    font-size: 14px;
+    color: var(--t8_color);
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -277,8 +264,8 @@
 }
 
 .text8{
-    color: #85859B;
-    font-size: 16px;
+    color: var(--t4_color);
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
@@ -290,16 +277,15 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    background-color: #FFF;
+    background-color: var(--t3_color);
     border: none;
     outline: none;
     padding-left: 0;
 }
 
 .text9{
-    color: #7875FE;
-    font-family: Roboto;
-    font-size: 20px;
+    color: var(--t6_color);
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -309,7 +295,7 @@
 /*далее спонсоры на сером фоне*/
 
 .section4{
-    background: #EBEBEB;
+    background: var(--t7_color);
     padding-bottom: 60px;
     padding-top: 60px;
     padding-left: 15px;
@@ -363,9 +349,8 @@
 }
 
 .text10{
-    color: #666;
-    font-family: Roboto;
-    font-size: 24px;
+    color: var(--t5_color);
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 24px */
@@ -374,9 +359,8 @@
 }
 
 .text11{
-    color: #85859B;
-    font-family: Roboto;
-    font-size: 16px;
+    color: var(--t4_color);
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
@@ -386,11 +370,11 @@
 
 /*подвал*/
 .section6{
-    background: #4C5866;
+    background: var(--t2_color);
 }
 
 .block6{
-    background: #4C5866;
+    background: var(--t2_color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,13 +386,13 @@
     width: 17px;
     height: 17px;
     border-radius: 11px;
-    border: 1px solid #FFF;
+    border: 1px solid var(--t3_color);
 }
 
 .text12{
-    color: #FFF;
-    font-family: Ubuntu;
-    font-size: 20px;
+    color: var(--t3_color);
+    font-family: Ubuntu, sans-serif;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -418,7 +402,7 @@
     width: 32px;
     height: 17px;
     border-radius: 11px;
-    border: 1px solid #FFF;
+    border: 1px solid var(--t3_color);
 }
 
 .line3{
@@ -426,7 +410,7 @@
     height: 1px;
     flex-shrink: 0;
     opacity: 0.2;
-    background: #DDD;
+    background: var(--t9_color);
     margin-left: 5px;
 }
 
@@ -440,14 +424,13 @@
     width: 320px;
     text-align: center;
     flex-shrink: 0;
-    background: white;
+    background: var(--t3_color);
     margin-bottom: 3px;
 }
 
 .lasttext{
-    color: #4C5866;
-    font-family: Roboto;
-    font-size: 13px;
+    color: var(--t2_color);
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
