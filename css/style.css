@@ -70,12 +70,6 @@ html {
     margin-right: 15px;
 }
 
-.button_menu{
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
 .button_find{
     display: flex;
     width: 24px;
@@ -88,7 +82,6 @@ html {
 .button_enter{
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
     margin-left: 30px;
 }
 /*ПРОСТЫЕ ВЕЩИ и тд....*/
@@ -97,8 +90,6 @@ html {
     max-width: 320px; /* Задайте нужную вам максимальную ширину */
     margin: 0 auto; /* Центрирование контента по горизонтали */
     padding: 49px 16px 49px 15px; /* Отступы слева и справа для создания отступов от краев экрана */
-    flex-shrink: 0;
-    /*max-height: 230px;*/
 }
 
 .text1{
@@ -125,7 +116,6 @@ html {
     padding: 20px 50px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border: 1px solid var(--t6_color);
     background-color: var(--t3_color);
     color: var(--t6_color);
@@ -145,12 +135,24 @@ html {
     background: var(--t7_color);
 }
 
-.hide{
+/*.hide{
     display: none;
+}*/
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .block{
-    flex-shrink: 0;
     display: flex;
     border-top: 1px solid var(--t4_color);
     padding-bottom: 20px;
@@ -160,7 +162,6 @@ html {
 .small_pic{
     width: 130px;
     /*height: 96px;*/
-    flex-shrink: 0;
 }
 .block14{
     padding-left: 30px;
@@ -191,7 +192,6 @@ html {
 .photo4{
     width: 290px;
     /*height: 223px;*/
-    flex-shrink: 0;
 }
 
 .text4{
@@ -219,10 +219,7 @@ html {
     margin: 0 auto; 
     padding: 60px 15px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-shrink: 0;
 }
 
 .block15{
@@ -236,7 +233,6 @@ html {
 .photo5{
     width: 290px;
     height: 180px;
-    flex-shrink: 0;
     background: var(--t7_color);
 }
 
@@ -270,16 +266,6 @@ html {
     margin-top: 0px;
 }
 
-.button2{
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    background-color: var(--t3_color);
-    border: none;
-    outline: none;
-    padding-left: 0;
-}
-
 .text9{
     color: var(--t6_color);
     font-size: 2rem;
@@ -303,7 +289,6 @@ html {
     list-style-type: none;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
@@ -331,8 +316,6 @@ html {
     max-width: 320px;
     margin: 0 auto; 
     padding: 60px 15px;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -380,7 +363,6 @@ html {
     justify-content: center;
     align-items: center;
     gap: 6px;
-    flex-shrink: 0;
 }
 
 .photo8{
@@ -409,7 +391,6 @@ html {
 .line3{
     width: 290px;
     height: 1px;
-    flex-shrink: 0;
     opacity: 0.2;
     background: var(--t9_color);
     margin-left: 5px;
@@ -428,7 +409,6 @@ html {
 .lastbox{
     width: 320px;
     text-align: center;
-    flex-shrink: 0;
     background: var(--t3_color);
     margin-bottom: 3px;
 }
