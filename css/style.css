@@ -444,3 +444,100 @@ html {
     margin: 0 auto; /* Центрирование контента по горизонтали */
     padding: 0 1px; /* Отступы слева и справа для создания отступов от краев экрана */
 }
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "linkss" "grafic";
+}
+
+.links{
+    grid-area: linkss;
+}
+
+.graf{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-area: grafic;
+}
+
+.largbocks{
+    grid-column: 1/-1;
+}
+
+.smallbocks{
+    grid-column: span 2;
+}
+
+.mediumbocks{
+    grid-column: span 3;
+}
+
+.itema{
+    background-color: black;
+    padding: 10px 20px;
+    grid-column: -1/1;
+    grid-row-start: 1;
+}
+
+.itemimg{
+    grid-column: -1/1;
+    grid-row-start: 1;
+    max-width: 100%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 1;
+    max-width: 100%;
+    border-radius: 8px;
+    justify-self: center;
+    align-items: center;
+}
+
+/*
+<section class="parentwhite">
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+            <div class="box">
+                <img src="img/box.jpg" alt="Chart 6">
+                <a href="#"  class="button_list2">Каталог</a>
+            </div>
+        </section>
+*/

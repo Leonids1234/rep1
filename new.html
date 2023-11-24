@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                "dashboard main main main"
+                "dashboard chart1 chart2 chart3"
+                "dashboard chart4 chart5 main";
+            height: 100vh;
+            margin: 0;
+        }
+
+        .dashboard {
+            grid-area: dashboard;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chart {
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+
+        .chart1, .chart2, .chart3, .chart4, .chart5 {
+            grid-area: auto;
+        }
+    </style>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Links and information panel content goes here -->
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <!-- Add more links or information as needed -->
+    </div>
+
+    <div class="main">
+        <!-- Main content goes here -->
+    </div>
+
+    <div class="chart chart1">
+        <img src="img\gr1.svg" alt="Chart 1">
+    </div>
+
+    <div class="chart chart2">
+        <img src="img\gr2.svg" alt="Chart 2">
+    </div>
+
+    <div class="chart chart3">
+        <img src="img\gr3.svg" alt="Chart 3">
+    </div>
+
+    <div class="chart chart4">
+        <img src="img\gr5.svg" alt="Chart 5">
+    </div>
+
+    <div class="chart chart5">
+        <img src="img\gr6.svg" alt="Chart 6">
+    </div>
+</body>
+</html>
