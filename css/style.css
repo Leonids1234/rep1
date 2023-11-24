@@ -448,7 +448,8 @@ html {
 .dashboard{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "linkss" "grafic";
+    grid-template-areas: "linkss grafic";
+
 }
 
 .links{
@@ -500,44 +501,3 @@ html {
     justify-self: center;
     align-items: center;
 }
-
-/*
-<section class="parentwhite">
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-            <div class="box">
-                <img src="img/box.jpg" alt="Chart 6">
-                <a href="#"  class="button_list2">Каталог</a>
-            </div>
-        </section>
-*/
