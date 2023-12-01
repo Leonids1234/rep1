@@ -1,0 +1,98 @@
+
+
+@media screen and (min-width: 576px) {
+    /*хэдер*/
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .head_frame,.buttons1{
+        grid-column: span 2;
+    }
+
+    .line1,.line2{
+        grid-row: span 2;
+    }
+
+    /*main*/
+    .section1 {
+        grid-template-columns: 1fr 1fr; /* Две колонки при ширине экрана больше 576px */
+        gap: 20px; /* Расстояние между колонками */
+    }
+
+    .tybys {
+        grid-column: 2;
+        max-width: 100%; /* Чтобы изображение не выходило за пределы блока */
+    }
+
+    /*section2*/
+    .section2 {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
+    }
+
+    .block {
+        flex-direction: row; /* Элементы списка выстраиваются горизонтально */
+    }
+
+    .section2 {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
+    }
+
+    .block {
+        flex-direction: row; /* Элементы списка выстраиваются горизонтально */
+    }
+
+    .section3 {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
+    }
+
+    
+
+    /*подвал*/
+    .s6grids {
+        grid-template-columns: repeat(3, 1fr); /* Три колонки в первой строке */
+    }
+    
+    .lastbox {
+        grid-column: span 3; /* Занимает три колонки в нижней строке */
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .tybys {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section3 {
+        grid-template-columns: repeat(4, 1fr); /* Четыре колонки при ширине экрана больше 1440px */
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .section4 {
+        grid-template-columns: repeat(2, 1fr); /* По два блока на строку */
+    }
+
+    .block4 {
+        width: auto; /* Сбросим ширину блока для мобильных устройств */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section4 {
+        grid-template-columns: repeat(4, 1fr); /* Все четыре блока в одну строку */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section5 {
+        grid-template-columns: 1fr 1fr; /* По два блока на строку при ширине экрана больше 768px */
+    }
+
+    .photo7{
+        order: 0;
+    }
+}
+

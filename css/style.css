@@ -25,41 +25,27 @@ html {
     box-sizing: inherit;
 }
 
-.head_frame{/*в ней кружочки и текст*/
-    display: flex;
+.block0{
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*хэдер*/
+
+.wrapper {/*обертка */
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
+}
+
+.head_frame{/*в ней кружочки и текст*/
     margin-top: 11px;
     margin-bottom: 11px;
 }
 
-.text1{
-    color: var(--t1_color);
-    font-family: Ubuntu, sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.text13{
-    margin-top: 0px;
-    margin-bottom: 15px;
-    width: 221px;
-    color: var(--t2_color);
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 30px */
-}
-
 .line1 {
     border-top: 1px solid var(--t4_color);
-}
-
-.line2 {
-    border-top: 1px solid var(--t4_color);
-    margin-top: 18px;
 }
 
 .buttons1{
@@ -84,20 +70,36 @@ html {
     height: 24px;
     margin-left: 30px;
 }
-/*ПРОСТЫЕ ВЕЩИ и тд....*/
 
+.line2 {
+    border-top: 1px solid var(--t4_color);
+    margin-top: 18px;
+}
+/*конец хэдера*/
+
+/*main*/
+/*section2*/
 .section1{
-    max-width: 320px; /* Задайте нужную вам максимальную ширину */
-    margin: 0 auto; /* Центрирование контента по горизонтали */
-    padding: 49px 16px 49px 15px; /* Отступы слева и справа для создания отступов от краев экрана */
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 49px 16px 49px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tybys{
+    max-width: 100%;
 }
 
 .text1{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 221px;
     color: var(--t2_color);
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 30px */
+    line-height: 100%; 
 }
 
 .text2{
@@ -126,34 +128,20 @@ html {
     text-decoration: none;
 }
 
-/*список услуг*/
+/*section2*/
 
 .section2{
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto; 
     padding: 49px 15px;
     background: var(--t7_color);
-}
-
-/*.hide{
-    display: none;
-}*/
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .block{
     display: flex;
+    
     border-top: 1px solid var(--t4_color);
     padding-bottom: 20px;
     padding-top: 20px;
@@ -161,7 +149,6 @@ html {
 
 .small_pic{
     width: 130px;
-    /*height: 96px;*/
 }
 .block14{
     padding-left: 30px;
@@ -191,7 +178,6 @@ html {
 
 .photo4{
     width: 290px;
-    /*height: 223px;*/
 }
 
 .text4{
@@ -212,18 +198,14 @@ html {
     margin-top: 14px;
 }
 
-/*серый фон кончился*/
+/*section3*/
 
 .section3{
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto; 
     padding: 60px 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.block15{
-    list-style-type: none;/*убрал черные точки*/
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .block16{
@@ -277,14 +259,21 @@ html {
 
 /*далее спонсоры на сером фоне*/
 
+    
 .section4{
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto; 
     padding: 60px 15px;
     background: var(--t7_color);
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr; /* По умолчанию, элементы в одной колонке */
+    gap: 20px;/* Выравнивание элементов по центру */
 }
 
+.sr-only{
+    display: none;
+}
+/*
 .block3{
     list-style-type: none;
     display: flex;
@@ -292,7 +281,7 @@ html {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
-}
+}*/
 
 .block4{
     display: flex;
@@ -307,21 +296,24 @@ html {
 }
 
 .inblock1{
-    align-items: center;
+    max-width: 100%;
 }
 
 /*конец серого фона*/
 
 .section5{
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto; 
     padding: 60px 15px;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .photo7{
     height: 220px;
     flex-shrink: 0;
+    order: -1;
 }
 
 .text10{
@@ -350,20 +342,67 @@ html {
 }
 
 /*подвал*/
-.section6{
-    max-width: 320px;
-    margin: 0 auto; 
-    padding: 0px 0px;
+
+.s6grids{
+    width: 100%;
     background: var(--t2_color);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 
 .block6{
     background: var(--t2_color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+    text-align: center;
+    margin: 0 auto;
 }
+
+.photo11{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.line3{
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background: var(--t9_color);
+    margin-left: 5px;
+}
+
+.block11{
+    background: var(--t2_color);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link1{
+    margin-right:30px;
+}
+
+.photo10{
+    width: 24px;
+    height: 24px;
+}
+
+.lastbox{
+    width: 100%;
+    text-align: center;
+    background: var(--t3_color);
+    margin-bottom: 3px;
+}
+
+.lasttext{
+    color: var(--t2_color);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/*конец подвала*/
 
 .photo8{
     width: 17px;
@@ -388,62 +427,7 @@ html {
     border: 1px solid var(--t3_color);
 }
 
-.line3{
-    width: 290px;
-    height: 1px;
-    opacity: 0.2;
-    background: var(--t9_color);
-    margin-left: 5px;
-}
-
-.link1{
-    display: inline-block;/*теперь имеет свойства и блока и строки*/
-    margin-right:30px;
-}
-
-.photo10{
-    width: 24px;
-    height: 24px;
-}
-
-.lastbox{
-    width: 320px;
-    text-align: center;
-    background: var(--t3_color);
-    margin-bottom: 3px;
-}
-
-.lasttext{
-    color: var(--t2_color);
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.block0{
-    display: block;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.block11{
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.photo11{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.wrapper {/*обертка */
-    max-width: 320px; /* Задайте нужную вам максимальную ширину */
-    margin: 0 auto; /* Центрирование контента по горизонтали */
-    padding: 0 1px; /* Отступы слева и справа для создания отступов от краев экрана */
-}
+/*ниже файл 2я страница с гридами*/
 
 .dashboard{
     display: grid;
@@ -474,19 +458,6 @@ html {
     grid-column: span 3;
 }
 
-.itema{
-    background-color: black;
-    padding: 10px 20px;
-    grid-column: -1/1;
-    grid-row-start: 1;
-}
-
-.itemimg{
-    grid-column: -1/1;
-    grid-row-start: 1;
-    max-width: 100%;
-}
-
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
@@ -500,4 +471,17 @@ html {
     border-radius: 8px;
     justify-self: center;
     align-items: center;
+}
+
+.itemimg{
+    grid-column: -1/1;
+    grid-row-start: 1;
+    max-width: 100%;
+}
+
+.itema{
+    background-color: black;
+    padding: 10px 20px;
+    grid-column: -1/1;
+    grid-row-start: 1;
 }
