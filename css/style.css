@@ -35,25 +35,43 @@ html {
 
 .wrapper {/*обертка */
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .head_frame{/*в ней кружочки и текст*/
     margin-top: 11px;
     margin-bottom: 11px;
+    align-self: center;
+    justify-self: center;
+    grid-column: span 2;
+}
+
+.head_frame:active{
+    box-shadow: 0 2px 4px black;
 }
 
 .line1 {
     border-top: 1px solid var(--t4_color);
+    grid-column: span 2;
 }
 
 .buttons1{
     display: flex;
     align-items: center;
+    justify-self: center;
     margin-top: 18px;
     margin-left: 15px;
     margin-right: 15px;
+    grid-column: span 2;
+}
+
+.menub{
+    display: block;
+}
+
+.menub:active{
+    box-shadow: 0 2px 4px black;
 }
 
 .button_find{
@@ -65,36 +83,66 @@ html {
     margin-left: 182px;
 }
 
+.button_find:active{
+    box-shadow: 0 2px 4px black;
+}
+
 .button_enter{
     width: 24px;
     height: 24px;
     margin-left: 30px;
 }
 
+.button_enter:active{
+    box-shadow: 0 2px 4px black;
+}
+
+.buttons2{
+    display: none;
+    grid-column: span 2;
+}
+
+.buttonsin{
+    color: #4C5866;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.buttonsin:active{
+    text-shadow: 0 0 1px red;
+}
+
+.buttonsin:hover{
+    color: #a7adb5;
+}
+
 .line2 {
     border-top: 1px solid var(--t4_color);
     margin-top: 18px;
+    grid-column: span 2;
 }
 /*конец хэдера*/
 
 /*main*/
-/*section2*/
 .section1{
     width: 100%; 
     margin: 0 auto; 
     padding: 49px 16px 49px 15px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+}
+
+.text12{
+    
 }
 
 .tybys{
-    max-width: 100%;
+    
+    display: none;
 }
 
 .text1{
     margin-top: 0px;
-    margin-bottom: 15px;
-    width: 221px;
     color: var(--t2_color);
     font-size: 3rem;
     font-style: normal;
@@ -106,8 +154,8 @@ html {
     color: var(--t4_color);
     font-size: 1.4rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 150%; /* 21px */
+    margin-top: 15px;
     margin-bottom: 21px;
 }
 
@@ -123,9 +171,17 @@ html {
     color: var(--t6_color);
     font-size: 1.8rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     text-decoration: none;
+}
+
+.button_list:hover{
+    background-color: var(--t6_color);
+    color: var(--t3_color);
+}
+
+.button_list:active{
+    box-shadow:  2px 2px black;
 }
 
 /*section2*/
@@ -136,13 +192,12 @@ html {
     padding: 49px 15px;
     background: var(--t7_color);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .block{
-    display: flex;
-    
     border-top: 1px solid var(--t4_color);
+    display: flex;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -151,7 +206,9 @@ html {
     width: 130px;
 }
 .block14{
-    padding-left: 30px;
+    border-top: 1px solid var(--t4_color);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .text_m{
@@ -174,6 +231,7 @@ html {
 
 .block13{
     margin-top: 52px;
+    grid-column: span 2;
 }
 
 .photo4{
@@ -257,31 +315,25 @@ html {
     text-decoration: none;/*убратьподчеркивание*/
 }
 
+.text9:hover{
+    box-shadow: 0 2px 4px black;
+}
+
 /*далее спонсоры на сером фоне*/
 
-    
 .section4{
     width: 100%;
     margin: 0 auto; 
     padding: 60px 15px;
     background: var(--t7_color);
     display: grid;
-    grid-template-columns: 1fr; /* По умолчанию, элементы в одной колонке */
-    gap: 20px;/* Выравнивание элементов по центру */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
 }
 
 .sr-only{
     display: none;
 }
-/*
-.block3{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
-}*/
 
 .block4{
     display: flex;
@@ -307,13 +359,11 @@ html {
     padding: 60px 15px;
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 .photo7{
     height: 220px;
-    flex-shrink: 0;
-    order: -1;
 }
 
 .text10{
@@ -324,7 +374,6 @@ html {
     line-height: 100%; /* 24px */
     margin-top: 0px;
     margin-bottom: 20px;
-
     background-image: linear-gradient(to right, black, #bfe9ff);
     color: transparent;
     -webkit-background-clip: text;
@@ -348,7 +397,7 @@ html {
     background: var(--t2_color);
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-content: center;/*по строке*/
 }
 
 .block6{
@@ -379,6 +428,10 @@ html {
 
 .link1{
     margin-right:30px;
+}
+
+.photo10:hover{
+    box-shadow: 0 2px 4px black;
 }
 
 .photo10{
@@ -484,4 +537,66 @@ html {
     padding: 10px 20px;
     grid-column: -1/1;
     grid-row-start: 1;
+}
+
+/*form.html*/
+html, body { height: 100%;}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+legend{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.input1{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button1 {
+    margin-top: 10px;
+    margin-left: 8px;
+    background-color: #f44336;
+}
+label span {
+    color: red;
+    margin-left: 4px;
 }

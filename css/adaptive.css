@@ -1,52 +1,112 @@
-
-
 @media screen and (min-width: 576px) {
     /*хэдер*/
-    .wrapper {
-        grid-template-columns: repeat(2, 1fr);
+    .head_frame{
+        grid-column: span 1;
+        justify-self: start;
+        margin-left: 5%;
     }
-
-    .head_frame,.buttons1{
-        grid-column: span 2;
+    .line1 {
+        order: 3;
     }
-
-    .line1,.line2{
-        grid-row: span 2;
+    .buttons1{
+        order: 2;
+        grid-column: span 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
+    .menub{
+        display: none;
+    }
+    .buttons2{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        order: 4;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+    .line2 {
+        order: 5;
+        margin-top: 0px;
+    }
     /*main*/
-    .section1 {
-        grid-template-columns: 1fr 1fr; /* Две колонки при ширине экрана больше 576px */
-        gap: 20px; /* Расстояние между колонками */
+    /*простые вещи из бумаги*/
+    .section1{
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-right: 33px;
+        padding-left: 32px;
+    }
+    .text12{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        margin-right: 29px;
+    }
+    .text1{
+        font-size: 3.8rem;
+    }
+    .text2{
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .button_list{
+        max-width: 196px;
+        max-height: 60px;
+        font-size: 2 rem;
+    }
+    .tybysparent{
+        height: 396px;
+        overflow: hidden;
+    }
+    .tybys{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
 
-    .tybys {
-        grid-column: 2;
-        max-width: 100%; /* Чтобы изображение не выходило за пределы блока */
+    /*бумага на сером*/
+    .section2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
     }
-
-    /*section2*/
-    .section2 {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
+    .block14{
+        border-top: 0px solid var(--t4_color);
+        padding-bottom: 20px;
+        padding-top: 0px;
     }
-
-    .block {
-        flex-direction: row; /* Элементы списка выстраиваются горизонтально */
-    }
-
-    .section2 {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
-    }
-
-    .block {
-        flex-direction: row; /* Элементы списка выстраиваются горизонтально */
-    }
-
-    .section3 {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки при ширине экрана больше 576px */
-    }
-
     
+
+/*Упаковка пакеты*/
+    .section3 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    /*Cпонсоры*/
+    .section4{
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+        gap: 30px 30px;
+    }
+    .block4{
+        margin-right: 0px;
+        width: 240px;
+        height: 127px;
+    }
+
+    /*последняя картинка последний текст*/
+    .section5 {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+    .text10{
+        font-size: 2.4rem;
+    }
+    .text11{
+        font-size: 1.6rem;
+    }
 
     /*подвал*/
     .s6grids {
@@ -58,11 +118,87 @@
     }
 }
 
-@media only screen and (max-width: 320px){
-    .tybys {
-        display: none;
+
+/*работает*/
+@media screen and (min-width: 768px) {
+    .section1{
+        padding-top: 60px;
+        padding-bottom: 0px;
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    .text12{
+        margin-top: 5px;
+        margin-bottom: 65px;
+        margin-right: 30px;
+    }
+
+    .text1{
+        font-size: 5rem;
+    }
+
+    .text2{
+        font-size: 1.8rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .button_list{
+        max-width: 255px;
+        max-height: 70px;
+    }
+
+    .tybysparent{
+        height: 410px;
+        overflow: hidden;
+    }
+
+    .tybys{
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        object-position: 0 0;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .head_frame{
+        grid-column: span 1;
+        
+    }
+
+    .line1 {
+        grid-column: span 3;
+        order: 4;
+    }
+
+    .buttons1{
+        order: 3;
+        grid-column: span 1;
+    }
+
+    .buttons2{
+        grid-column: span 1;
+        order: 2;
+    }
+
+    .line2 {
+        display: none;
+    }
+
+    .text1{
+        font-size: 6 rem;
+    }
+}
+
+
+
+
+
 
 @media screen and (min-width: 1440px) {
     .section3 {
@@ -70,29 +206,37 @@
     }
 }
 
-@media screen and (min-width: 576px) {
-    .section4 {
-        grid-template-columns: repeat(2, 1fr); /* По два блока на строку */
-    }
-
-    .block4 {
-        width: auto; /* Сбросим ширину блока для мобильных устройств */
-    }
-}
-
 @media screen and (min-width: 768px) {
+
     .section4 {
         grid-template-columns: repeat(4, 1fr); /* Все четыре блока в одну строку */
     }
-}
 
-@media screen and (min-width: 768px) {
     .section5 {
         grid-template-columns: 1fr 1fr; /* По два блока на строку при ширине экрана больше 768px */
+        padding-left: 39px;
+    }
+
+    .s5grid1{
+        order: 2;
+    }
+
+    .s5grid1{
+        order: 1;
     }
 
     .photo7{
-        order: 0;
+        height: 220px;
+        flex-shrink: 0;
+        order: -1;
+    }
+    
+    .text10{
+        font-size: 3rem;
+    }
+    
+    .text11{
+        font-size: 1.8rem;
     }
 }
 

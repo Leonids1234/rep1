@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+
+<body class="block0">
+    <header class="wrapper">
+        <div class="head_frame">
+            <a href="form.html" title="Главная">
+                <img src="img/Frame234.svg" alt="заголовок">
+            </a>
+        </div>
+        <div class="line1"></div>
+        <div class="buttons1">
+            <input class="menub" type="image" src="img/List.svg" alt="меню">
+            <input class="button_find" type="image" src="img/search.svg" alt="поиск">
+            <input class="button_enter" type="image" src="img/log-in.svg" alt="вход">
+        </div>
+        <div class="buttons2">
+            <a class="buttonsin" href="#" title="Продукция">Продукция</a>
+            <a class="buttonsin" href="#" title="Материалы">Материалы</a>
+            <a class="buttonsin" href="#" title="О нас">О нас</a>
+            <a class="buttonsin" href="#" title="Контакты">Контакты</a>
+        </div>
+        <div class="line2"></div>
+    </header>
+
+    <main>
+        <form action="//httpbin.org/post" method="POST">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <label for="name">Имя:<span>*</span></label>
+                <input class="input1" type="text" id="name" name="name" placeholder="Иван" required>
+                <label for="dob">Дата рождения:<span>*</span></label>
+                <input class="input1" type="date" id="dob" name="dob" required>
+                <label>Пол:<span>*</span></label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required> Мужской
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required> Женский
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <label for="password">Пароль:<span>*</span></label>
+                <input class="input1" type="password" id="password" name="password" required>
+                <label for="email">Email:</label>
+                <input class="input1" type="email" id="email" name="email" placeholder="example@example.com">
+                <label for="phone">Телефон:<span>*</span></label>
+                <input class="input1" type="tel" id="phone" name="phone" placeholder="+7 123-456-7890" required>
+                <label>Удобный интервал для связи:<span>*</span></label>
+                <select name="contact_interval" required>
+                    <option value="" disabled selected hidden>Выберите интервал</option>
+                    <option value="morning">Утро</option>
+                    <option value="day">День</option>
+                    <option value="evening">Вечер</option>
+                    <option value="night">Ночь</option>
+                </select>
+            </fieldset>
+
+            <div>
+                <button type="submit">
+                    <span>Отправить</span>
+                </button>
+                <button class="button1" type="reset">
+                    <span>Сбросить</span>
+                </button>
+            </div>
+        </form>
+
+    </main>
+    
+    <footer class="s6grids">
+        <div class="block6">
+            <a href="grid.html" title="На главную">
+                <img class="photo11" src="img/Frame85.svg" alt="заголовок">
+            </a>
+        </div>
+        <div class="line3"></div>
+        <div class="block11">
+            <a href="#" title="Facebook" class="link1">
+                <img class="photo10" src="img/Frame2.svg" alt="Facebook">
+            </a>
+            <a href="#" title="Twitter" class="link1">
+                <img class="photo10" src="img/Frame1.svg" alt="Twitter">
+            </a>
+            <a href="#" title="instagram" class="link1">
+                <img class="photo10" src="img/Frame3.svg" alt="instagram">
+            </a>
+            <a href="#" title="You tube" class="link1">
+                <img class="photo10" src="img/Frame.svg" alt="You tube">
+            </a>
+        </div>
+        <div class="lastbox">
+            <p class="lasttext">Simple ® 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
