@@ -45,11 +45,23 @@ html {
     align-self: center;
     justify-self: center;
     grid-column: span 2;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .head_frame:active{
     box-shadow: 0 2px 4px black;
 }
+
+.head_frame:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.head_frame:focus {
+    background-color: #960707;
+}                         
 
 .line1 {
     border-top: 1px solid var(--t4_color);
@@ -68,11 +80,23 @@ html {
 
 .menub{
     display: block;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .menub:active{
     box-shadow: 0 2px 4px black;
 }
+
+.menub:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.menub:focus {
+    background-color: #960707;
+}  
 
 .button_find{
     display: flex;
@@ -81,21 +105,45 @@ html {
     justify-content: center;
     align-items: center;
     margin-left: 182px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .button_find:active{
     box-shadow: 0 2px 4px black;
 }
 
+.button_find:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.button_find:focus {
+    background-color: #960707;
+} 
+
 .button_enter{
     width: 24px;
     height: 24px;
     margin-left: 30px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .button_enter:active{
     box-shadow: 0 2px 4px black;
 }
+
+.button_enter:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.button_enter:focus {
+    background-color: #960707;
+} 
 
 .buttons2{
     display: none;
@@ -108,6 +156,7 @@ html {
     font-weight: 400;
     text-decoration: none;
     flex-grow: 1;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .buttonsin:active{
@@ -115,8 +164,15 @@ html {
 }
 
 .buttonsin:hover{
-    color: #a7adb5;
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
 }
+
+.buttonsin:focus {
+    color: #960707;
+} 
 
 .line2 {
     border-top: 1px solid var(--t4_color);
@@ -127,14 +183,9 @@ html {
 
 /*main*/
 .section1{
-
     margin: 0 auto; 
     padding: 49px 16px 49px 15px;
     display: flex;
-}
-
-.text12{
-    
 }
 
 .tybys{
@@ -174,9 +225,12 @@ html {
     font-style: normal;
     line-height: normal;
     text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .button_list:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
     background-color: var(--t6_color);
     color: var(--t3_color);
 }
@@ -184,6 +238,10 @@ html {
 .button_list:active{
     box-shadow:  2px 2px black;
 }
+
+.button_list:focus {
+    background-color: #960707;
+} 
 
 /*section2*/
 
@@ -316,17 +374,30 @@ html {
 }
 
 .text9{
+    display: inline-block;
     color: var(--t6_color);
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;/*убратьподчеркивание*/
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .text9:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.text9:active{
     box-shadow: 0 2px 4px black;
 }
+
+.text9:focus {
+    background-color: #960707;
+} 
 
 /*далее спонсоры на сером фоне*/
 
@@ -419,6 +490,7 @@ html {
 .photo11{
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .line3{
@@ -440,14 +512,41 @@ html {
     margin-right:30px;
 }
 
-.photo10:hover{
-    box-shadow: 0 2px 4px black;
-}
-
 .photo10{
     width: 24px;
     height: 24px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
+
+.photo11:active{
+    box-shadow: 0 2px 4px black;
+}
+
+.photo11:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.photo11:focus {
+    background-color: #960707;
+} 
+
+.photo10:active{
+    box-shadow: 0 2px 4px black;
+}
+
+.photo10:hover{
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+    background-color: #2980b9; /* Новый цвет фона при наведении */
+    color: #fff; /* Новый цвет текста при наведении */
+}
+
+.photo10:focus {
+    background-color: #960707;
+} 
 
 .lastbox{
     width: 100%;
@@ -609,4 +708,52 @@ button {
 label span {
     color: red;
     margin-left: 4px;
+}
+
+
+/**/
+::selection {
+    background-color: var(--t7_color); /* Цвет фона при выделении */
+    color: var(--t3_color); /* Цвет текста при выделении */
+}
+/*
+.card {
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid var(--t11_color);
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px var(--t10_color);
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid var(--t11_color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-50%, -50%) rotate(360deg); }
+    100%{visibility: hidden;}
+}*/
+
+
+/*лаб9 форм*/
+.block61 {
+    background: var(--t2_color);
+    text-align: center;
+    margin: 0 auto;
+    transform: rotate(30deg) scale(1.5) skewX(5deg) skewY(5deg);
 }
