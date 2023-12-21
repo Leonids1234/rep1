@@ -5,11 +5,10 @@
     --t1_color: #333;
     --t2_color: #4C5866;
     --t3_color: #FFF;
-    --t4_color: #85859B;
-    --t5_color: #666;
-    --t6_color: #7875FE;
+    --t4_color: #34343b;
+    --t5_color: #464545;
+    --t6_color: #1915f5;
     --t7_color: #EBEBEB;
-    --t8_color: #B5B5BD;
     --t9_color: #DDD;
     --t10_color: #888888;
     --t11_color: #C4C4C4;
@@ -152,7 +151,7 @@ html {
 
 .buttonsin{
     color: #4C5866;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
     flex-grow: 1;
@@ -354,7 +353,7 @@ html {
 }
 
 .text7{
-    color: var(--t8_color);
+    color: var(--t5_color);
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -407,7 +406,7 @@ html {
     padding: 60px 15px;
     background: var(--t7_color);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden;
 }
 
@@ -425,6 +424,7 @@ html {
     border: 1px solid var(--t11_color);
     margin-right: 30px;
     box-shadow: 5px 5px 5px var(--t10_color);
+    position: relative;/**/
 }
 
 .inblock1{
@@ -689,6 +689,15 @@ label {
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
+    border: 2px solid rgb(174, 18, 18);
+}
+
+.input2{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 button {
@@ -698,6 +707,18 @@ button {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.form_text{
+    color: #434343;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+input::placeholder {
+    color: rgb(212, 180, 212); /* Цвет текста плейсхолдера */
+    font-size: 1rem; /* Размер текста плейсхолдера */
+    font-weight: bold; /* Жирность текста плейсхолдера */
 }
 
 .button1 {
@@ -710,12 +731,17 @@ label span {
     margin-left: 4px;
 }
 
+.span_text{
+    color: rgb(0, 0, 0);
+}
 
 /**/
 ::selection {
     background-color: var(--t7_color); /* Цвет фона при выделении */
     color: var(--t3_color); /* Цвет текста при выделении */
 }
+
+
 
 @keyframes spin {
     0% {
@@ -725,6 +751,7 @@ label span {
         transform: rotate(360deg);
     }
 }
+
 
 @keyframes fadeOut {
     0% {
@@ -742,6 +769,11 @@ label span {
     width: 50px;
     height: 50px;
     animation: spin 5s linear infinite, fadeOut 5s ease-out 5s forwards;
+    
+    position: absolute;
+    top: 40px;
+    left: 95px;
+    z-index: 2;
 }
 
 @keyframes fadein {
@@ -756,6 +788,8 @@ label span {
 .aim{
     max-width: 100%;
     animation: fadein 35s;
+    position: relative; 
+    z-index: 1;
 }
 
 /*лаб9 форм*/
@@ -765,3 +799,15 @@ label span {
     margin: 0 auto;
     transform: rotate(30deg) scale(1.5) skewX(5deg) skewY(5deg);
 }
+
+main, header, footer{
+    margin: 0 auto;
+    max-width: 1440px; 
+}
+
+input:checked+span {
+    color: rgb(24, 49, 195);
+}
+
+
+

@@ -148,6 +148,7 @@
     /*Cпонсоры*/
     .section4{
         grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-items: center;
         gap: 10% 0%;
         padding-left: 5%;
@@ -263,9 +264,15 @@
 
 
     .section4 {
-        grid-template-columns: repeat(4, 1fr); /* Все четыре блока в одну строку */
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
         gap: 3%;
         padding-bottom: 60px;
+    }
+
+    .loader {
+        top: 20px;
+        left: 50px;
     }
 
     .block4{
@@ -325,6 +332,7 @@
         height: 700px;
         margin-left: 10%;
         margin-right: 10%;
+        
     }
 
     .tybysparent{
@@ -359,13 +367,20 @@
     }
 
     .section4{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr;
         padding-left: 10%;
         padding-right: 10%;
     }
 
+    .loader {
+        top: 42px;
+        left: 87px;
+    }
+
     .block4{
-        min-width: 225px;
-        min-height: 135px;
+        width: 200px;
+        height: 135px;
     }
 
     .section5 {
@@ -387,3 +402,4 @@
         margin-right: 20%;
     }
 }
+

@@ -38,30 +38,32 @@
     <main class="form1">
         <form action="//httpbin.org/post" method="POST">
             <fieldset>
-                <legend>Личная информация</legend>
-                <label for="name">Имя:<span>*</span></label>
+                <legend class="form_text">Личная информация</legend>
+                <label class="form_text" for="name">Имя:<span>*</span></label>
                 <input class="input1" type="text" id="name" name="name" placeholder="Иван" required>
-                <label for="dob">Дата рождения:<span>*</span></label>
+                <label class="form_text" for="dob">Дата рождения:<span>*</span></label>
                 <input class="input1" type="date" id="dob" name="dob" required>
-                <label>Пол:<span>*</span></label>
+                <label class="form_text">Пол:<span>*</span></label>
                 <label for="male">
-                    <input type="radio" id="male" name="gender" value="male" required> Мужской
+                    <input type="radio" id="male" name="gender" value="male" required> 
+                    <span class="span_text">Female</span>
                 </label>
                 <label for="female">
-                    <input type="radio" id="female" name="gender" value="female" required> Женский
+                    <input  type="radio" id="female" name="gender" value="female" required>
+                    <span class="span_text">Женский</span>
                 </label>
             </fieldset>
 
             <fieldset>
-                <legend>Контактные данные</legend>
-                <label for="password">Пароль:<span>*</span></label>
+                <legend class="form_text">Контактные данные</legend>
+                <label class="form_text" for="password">Пароль:<span>*</span></label>
                 <input class="input1" type="password" id="password" name="password" required>
-                <label for="email">Email:</label>
-                <input class="input1" type="email" id="email" name="email" placeholder="example@example.com">
-                <label for="phone">Телефон:<span>*</span></label>
+                <label class="form_text" for="email">Email:</label>
+                <input class="input2" type="email" id="email" name="email" placeholder="example@example.com">
+                <label class="form_text" for="phone">Телефон:<span>*</span></label>
                 <input class="input1" type="tel" id="phone" name="phone" placeholder="+7 123-456-7890" required>
-                <label>Удобный интервал для связи:<span>*</span></label>
-                <select name="contact_interval" required>
+                <label class="form_text">Удобный интервал для связи:<span>*</span></label>
+                <select class="input1" name="contact_interval" required>
                     <option value="" disabled selected hidden>Выберите интервал</option>
                     <option value="morning">Утро</option>
                     <option value="day">День</option>
