@@ -47,18 +47,18 @@ html {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.head_frame:active{
+.head_frame1:active{
     box-shadow: 0 2px 4px black;
 }
 
-.head_frame:hover{
-    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот кнопки при наведении */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень при наведении */
-    background-color: #2980b9; /* Новый цвет фона при наведении */
-    color: #fff; /* Новый цвет текста при наведении */
+.head_frame1:hover{
+    transform: scale(1.1) rotate(5deg); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    background-color: #2980b9; 
+    color: #fff; 
 }
 
-.head_frame:focus {
+.head_frame1:focus{
     background-color: #960707;
 }                         
 
@@ -529,7 +529,7 @@ html {
     color: #fff; /* Новый цвет текста при наведении */
 }
 
-.photo11:focus {
+.photo11:focus{
     background-color: #960707;
 } 
 
@@ -544,7 +544,7 @@ html {
     color: #fff; /* Новый цвет текста при наведении */
 }
 
-.photo10:focus {
+.photo10:focus{
     background-color: #960707;
 } 
 
@@ -807,6 +807,32 @@ main, header, footer{
 
 input:checked+span {
     color: rgb(24, 49, 195);
+}
+
+.sr-only2{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #18191c;
+    background: #10F3AF;
+    transform: translateY(-100%);
+}
+.skip-link:focus {
+    transform: translateY(20%);
 }
 
 
