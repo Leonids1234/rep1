@@ -741,8 +741,6 @@ label span {
     color: var(--t3_color); /* Цвет текста при выделении */
 }
 
-
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -751,7 +749,6 @@ label span {
         transform: rotate(360deg);
     }
 }
-
 
 @keyframes fadeOut {
     0% {
@@ -834,6 +831,3 @@ input:checked+span {
 .skip-link:focus {
     transform: translateY(20%);
 }
-
-
-
